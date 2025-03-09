@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Courses - Manoj Classes</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark shadow">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Manoj Classes</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="courses.html">Courses</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero-banner d-flex align-items-center text-white text-center">
+        <div class="container">
+            <h1 class="display-3 fw-bold animate-text">Our Courses</h1>
+            <p class="lead">Comprehensive Coaching for Mathematics And Computer Science</p>
+            <a href="#courses" class="btn btn-primary">Explore Now</a>
+        </div>
+    </header>
+    <!-- Courses Section -->
+    <section id="courses" class="container my-5">
+        <h2 class="text-center mb-4">Explore Our Courses</h2>
+        <div class="row">
+
+            <!-- Computer Science Courses -->
+            <div class="col-md-6">
+                <h4 class="text-primary"><i class="bi bi-laptop"></i>Computer Science</h4>
+                <div class="accordion" id="csCourses">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="csOne">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#csCollapseOne">
+                                Programming Languages
+                            </button>
+                        </h2>
+                        <div id="csCollapseOne" class="accordion-collapse collapse show" data-bs-parent="#csCourses">
+                            <div class="accordion-body">
+                                <ul>
+                                    <li>C Programming</li>
+                                    <li>C++ & OOP Concepts</li>
+                                    <li>Java & Advanced Java</li>
+                                    <li>Python & Data Science Basics</li>
+                                    <li>Web Development (HTML, CSS, JavaScript, React)</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="csTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#csCollapseTwo">
+                                Advanced Computer Science
+                            </button>
+                        </h2>
+                        <div id="csCollapseTwo" class="accordion-collapse collapse" data-bs-parent="#csCourses">
+                            <div class="accordion-body">
+                                <ul>
+                                    <li>Data Structures & Algorithms</li>
+                                    <li>Database Management Systems (SQL, MySQL, MongoDB)</li>
+                                    <li>Operating Systems & Computer Networks</li>
+                                    <li>Cyber Security & Ethical Hacking</li>
+                                    <li>Software Engineering & SDLC</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="csThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#csCollapseThree">
+                                Project Development & AI
+                            </button>
+                        </h2>
+                        <div id="csCollapseThree" class="accordion-collapse collapse" data-bs-parent="#csCourses">
+                            <div class="accordion-body">
+                                <ul>
+                                    <li>Machine Learning Basics</li>
+                                    <li>AI & Deep Learning Concepts</li>
+                                    <li>Software Project Development</li>
+                                    <li>Android App Development</li>
+                                    <li>Cloud Computing & DevOps</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Enroll Now Button -->
+                <div class="text-center mt-3">
+                    <a href="contact.html" class="btn btn-primary">Enroll Now</a>
+                </div>
+            </div>
+
+            <!-- Mathematics Courses -->
+            <div class="col-md-6">
+                <h4 class="text-success"><i class="bi bi-bar-chart"></i> Mathematics Coaching</h4>
+                <div class="accordion" id="mathCourses">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="mathOne">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#mathCollapseOne">
+                                Core Mathematics
+                            </button>
+                        </h2>
+                        <div id="mathCollapseOne" class="accordion-collapse collapse show" data-bs-parent="#mathCourses">
+                            <div class="accordion-body">
+                                <ul>
+                                    <li>Calculus (Differential & Integral)</li>
+                                    <li>Linear Algebra & Matrix Theory</li>
+                                    <li>Probability & Statistics</li>
+                                    <li>Graph Theory & Combinatorics</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="mathTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#mathCollapseTwo">
+                                Applied Mathematics
+                            </button>
+                        </h2>
+                        <div id="mathCollapseTwo" class="accordion-collapse collapse" data-bs-parent="#mathCourses">
+                            <div class="accordion-body">
+                                <ul>
+                                    <li>Numerical Methods & Optimization</li>
+                                    <li>Differential Equations & Real Analysis</li>
+                                    <li>Mathematical Modeling</li>
+                                    <li>Discrete Mathematics & Boolean Algebra</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Enroll Now Button -->
+                <div class="text-center mt-3">
+                    <a href="contact.html" class="btn btn-primary">Enroll Now</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <footer class="bg-dark text-white pt-4">
+        <div class="container">
+            <div class="row">
+                <!-- About Section -->
+                <div class="col-md-4">
+                    <h5>About Manoj Classes</h5>
+                    <p>"At Manoj Classes, we are dedicated to providing high-quality education in Mathematics and Computer Science, ensuring students build a strong foundation in both theoretical concepts and practical applications. With a result-driven approach, expert faculty, and an industry-aligned curriculum, we empower students to excel in academics and beyond.</p>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="col-md-4">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html" class="text-white text-decoration-none">Home</a></li>
+                        <li><a href="about.html" class="text-white text-decoration-none">About</a></li>
+                        <li><a href="courses.html" class="text-white text-decoration-none">Courses</a></li>
+                        <li><a href="contact.html" class="text-white text-decoration-none">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact & Social Links -->
+                <div class="col-md-4">
+                    <h5>Contact Us</h5>
+                    <p><i class="bi bi-telephone-fill"></i> +91 9371644880</p>
+                    <p><i class="bi bi-envelope-fill"></i> kapilgiddekg@gmail.com</p>
+                    <p><i class="bi bi-geo-alt-fill"></i> 1471 'KH', C Ward, Laxmipuri, Kondalane, Kolhapur</p>
+
+                    <!-- Social Media Links -->
+                    <h5>Follow Us</h5>
+                    <a href="#" class="text-white me-3"><i class="bi bi-facebook"></i></a>
+                    <a href="#" class="text-white me-3"><i class="bi bi-instagram"></i></a>
+                    <a href="#" class="text-white me-3"><i class="bi bi-twitter"></i></a>
+                    <a href="#" class="text-white"><i class="bi bi-linkedin"></i></a>
+                </div>
+            </div>
+
+            <!-- Copyright -->
+            <div class="text-center py-3 mt-3 border-top">
+                &copy; 2025 Manoj Classes Kolhapur | All Rights Reserved
+            </div>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

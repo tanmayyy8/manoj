@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Manoj Classes</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark shadow">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Manoj Classes</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="courses.html">Courses</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero-banner d-flex align-items-center text-white text-center">
+        <div class="container">
+            <h1 class="display-3 fw-bold animate-text">Contact Us</h1>
+            <p class="lead">Get in Touch with Manoj Classes</p>
+            <a href="#form-contact" class="btn btn-primary">Connect With us</a>
+        </div>
+    </header>
+
+    <!-- Contact Section -->
+    <section id="form-contact" class="container my-5">
+        <div class="row">
+            <!-- Contact Form -->
+            <div class="col-md-6">
+                <h2 class="text-primary"><i class="bi bi-envelope"></i> Send Us a Message</h2>
+                <form action="https://formspree.io/f/your-form-id" method="POST">
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Full Name</label>
+                        <input type="text" class="form-control" id="name" name="name" placeholder="Enter your full name" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email Address</label>
+                        <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="phone" class="form-label">Phone Number</label>
+                        <input type="tel" class="form-control" id="phone" name="phone" placeholder="Enter your phone number" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="message" class="form-label">Your Message</label>
+                        <textarea class="form-control" id="message" name="message" rows="4" placeholder="Write your message here" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary w-100"><i class="bi bi-send"></i> Send Message</button>
+                </form>
+            </div>
+
+            <!-- Contact Information -->
+            <div class="col-md-6">
+                <h2 class="text-success"><i class="bi bi-telephone"></i> Contact Information</h2>
+                <p><i class="bi bi-geo-alt-fill"></i> <strong>Address:</strong> 1471 'KH', C Ward, Laxmipuri, Kondalane, Kolhapur</p>
+                <p><i class="bi bi-telephone-fill"></i> <strong>Phone:</strong> +91 9371644880</p>
+                <p><i class="bi bi-envelope-fill"></i> <strong>Email:</strong> <a href="mailto:kapilgiddekg@gmail.com">kapilgiddekg@gmail.com</a></p>
+
+                <!-- Google Map -->
+                <h3 class="mt-4"><i class="bi bi-map"></i> Our Location</h3>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3819.6955170557565!2d74.2258349!3d16.7003419!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc1005bcd28c4c7%3A0x639abe539c4ec1b7!2sMANOJ%20CLASSES!5e0!3m2!1sen!2sin!4v1644676762345!5m2!1sen!2sin" 
+                        width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-dark text-white pt-4">
+        <div class="container">
+            <div class="row">
+                <!-- About Section -->
+                <div class="col-md-4">
+                    <h5>About Manoj Classes</h5>
+                    <p>"At Manoj Classes, we are dedicated to providing high-quality education in Mathematics and Computer Science, ensuring students build a strong foundation in both theoretical concepts and practical applications. With a result-driven approach, expert faculty, and an industry-aligned curriculum, we empower students to excel in academics and beyond.</p>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="col-md-4">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html" class="text-white text-decoration-none">Home</a></li>
+                        <li><a href="about.html" class="text-white text-decoration-none">About</a></li>
+                        <li><a href="courses.html" class="text-white text-decoration-none">Courses</a></li>
+                        <li><a href="contact.html" class="text-white text-decoration-none">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact & Social Links -->
+                <div class="col-md-4">
+                    <h5>Contact Us</h5>
+                    <p><i class="bi bi-telephone-fill"></i> +91 9371644880</p>
+                    <p><i class="bi bi-envelope-fill"></i> kapilgiddekg@gmail.com</p>
+                    <p><i class="bi bi-geo-alt-fill"></i> 1471 'KH', C Ward, Laxmipuri, Kondalane, Kolhapur</p>
+
+                    <!-- Social Media Links -->
+                    <h5>Follow Us</h5>
+                    <a href="#" class="text-white me-3"><i class="bi bi-facebook"></i></a>
+                    <a href="#" class="text-white me-3"><i class="bi bi-instagram"></i></a>
+                    <a href="#" class="text-white me-3"><i class="bi bi-twitter"></i></a>
+                    <a href="#" class="text-white"><i class="bi bi-linkedin"></i></a>
+                </div>
+            </div>
+
+            <!-- Copyright -->
+            <div class="text-center py-3 mt-3 border-top">
+                &copy; 2025 Manoj Classes Kolhapur | All Rights Reserved
+            </div>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
