@@ -1,0 +1,479 @@
+/* =============================
+   🌟 General Styling 
+   ============================= */
+   body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+h1, h2, h3, h4 {
+    font-weight: 600;
+}
+
+a {
+    text-decoration: none;
+    transition: 0.3s ease-in-out;
+}
+
+a:hover {
+    color: #007bff;
+}
+/* =============================
+   🎉 Welcome Section (Full Height + Text Shadow)
+   ============================= */
+   .welcome-section {
+    position: relative;
+    height: 100vh; /* Full screen height */
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+                url('../images/ban.jpg') no-repeat center center/cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    color: #ffffff;
+}
+
+/* 🔹 Title with Shadow */
+.welcome-section h1 {
+    font-size: 3.5rem;
+    font-weight: bold;
+    text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.8);
+    margin-bottom: 15px;
+}
+
+/* 🔹 Subtitle with Shadow */
+.welcome-section p {
+    font-size: 1.4rem;
+    max-width: 800px;
+    line-height: 1.6;
+    color: #dddddd;
+    text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.7);
+    margin-bottom: 30px;
+}
+
+/* 🔹 Explore Courses Button */
+.welcome-btn {
+    background: #075eff;
+    color: black;
+    padding: 14px 30px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 5px;
+    border: none;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    text-transform: uppercase;
+    box-shadow: 0px 4px 10px rgba(255, 193, 7, 0.4);
+}
+
+.welcome-btn:hover {
+    background: #005de0;
+    transform: scale(1.1);
+}
+
+/* 📱 Responsive Adjustments */
+@media (max-width: 768px) {
+    .welcome-section h1 {
+        font-size: 2.5rem;
+    }
+    .welcome-section p {
+        font-size: 1.2rem;
+    }
+}
+/* General Smooth Fade Animation */
+.fade-in {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+.fade-in.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Navbar Styling */
+.navbar {
+    transition: all 0.4s ease-in-out;
+}
+.navbar.scrolled {
+    background-color: rgba(0, 0, 0, 0.9) !important;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Hero Section Styling */
+.hero-section {
+    position: relative;
+    animation: fadeSlideUp 1.5s ease-out;
+}
+@keyframes fadeSlideUp {
+    0% { opacity: 0; transform: translateY(50px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+/* Button Hover Effect */
+.btn-warning {
+    transition: all 0.3s ease-in-out;
+}
+.btn-warning:hover {
+    transform: scale(1.1);
+    background-color: #0084ff !important;
+}
+
+/* Icons Animation */
+.bi {
+    transition: transform 0.3s ease-in-out;
+}
+.bi:hover {
+    transform: scale(1.2) rotate(5deg);
+}
+
+/* Section Reveal Animation */
+.reveal {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: all 1s ease-out;
+}
+.reveal.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Footer Social Media Icons */
+footer .bi {
+    font-size: 24px;
+    transition: color 0.3s, transform 0.3s;
+}
+footer .bi:hover {
+    color: #006aff;
+    transform: scale(1.2);
+}
+
+/* =============================
+   🚀 Hero Section (Banner) 
+   ============================= */
+/* =============================
+   🚀 Hero Section (Professional Look)
+   ============================= */
+   /*  HERO SECTION STYLING */
+.hero-banner {
+    height: 100vh; /* Full screen */
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
+                url('../images/ban.jpg') center/cover no-repeat fixed;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+}
+
+/* Animated Hero Text */
+.animate-text {
+    animation: fadeInUp 1.5s ease-in-out;
+}
+
+/* Smooth Fade-in Animation */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Hero Button Styling */
+.btn-hero {
+    padding: 12px 25px;
+    font-size: 1.2rem;
+    border-radius: 8px;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Button Hover Effect */
+.btn-hero:hover {
+    background-color: #004cff !important;
+    transform: scale(1.05);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .hero-banner {
+        height: 70vh;
+    }
+    .hero-banner h1 {
+        font-size: 2rem;
+    }
+}
+
+/* Call-to-action button */
+.hero-btn {
+    display: inline-block;
+    background: #007bff;
+    color: white;
+    padding: 12px 25px;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+}
+
+.hero-btn:hover {
+    background: #0056b3;
+    transform: scale(1.1);
+}
+
+/* =============================
+   🎭 Animations 
+   ============================= */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* =============================
+   🏆 About Section 
+   ============================= */
+.about-section {
+    padding: 80px 0;
+}
+
+.about-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #222;
+}
+
+.about-section p {
+    font-size: 1.1rem;
+    line-height: 1.7;
+}
+
+/* Button Styling */
+.btn-custom {
+    background: #007bff;
+    color: white;
+    padding: 12px 25px;
+    font-size: 1rem;
+    border-radius: 5px;
+    display: inline-block;
+    transition: 0.3s;
+}
+
+btn-warning:hover {
+    background-color: #ffcc00 !important;
+    color: #000 !important;
+}
+
+.btn-primary:hover {
+    background-color: #004085 !important;
+    color: #fff !important;
+}
+/* =============================
+   🎓 Founder Section 
+   ============================= */
+.owner-info {
+    text-align: center;
+    background: #ffffff;
+    padding: 80px 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin: 50px auto;
+    max-width: 800px;
+}
+
+.owner-info img {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid #007bff;
+    transition: 0.3s ease-in-out;
+}
+
+.owner-info img:hover {
+    transform: scale(1.1);
+}
+
+.owner-info h3 {
+    font-size: 2rem;
+    margin-top: 15px;
+    color: #333;
+}
+
+.owner-info p {
+    font-size: 1.1rem;
+    color: #555;
+}
+
+/* =============================
+   ⭐ Why Choose Us Section
+   ============================= */
+.why-choose-us {
+    background: #f9f9f9;
+    padding: 80px 0;
+    text-align: center;
+}
+.owner-info .btn-founder {
+    background-color: #17a2b8;
+    color: #fff;
+    border-radius: 8px;
+    padding: 10px 20px;
+    font-weight: bold;
+}
+
+.owner-info .btn-founder:hover {
+    background-color: #138496;
+}
+
+.why-choose-us h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+
+.feature-box {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    transition: 0.3s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.feature-box i {
+    font-size: 3rem;
+    color: #007bff;
+}
+
+.feature-box:hover {
+    transform: translateY(-10px);
+    background: #007bff;
+    color: white;
+}
+
+.feature-box:hover i {
+    color: white;
+}
+
+/* =============================
+   🗣 Testimonials Section 
+   ============================= */
+.testimonials {
+    background: #343a40;
+    color: rgb(0, 0, 0);
+    padding: 80px 0;
+}
+
+.testimonial-box {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 30px;
+    border-radius: 10px;
+    transition: 0.3s ease-in-out;
+}
+
+.testimonial-box:hover {
+    transform: scale(1.05);
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.testimonial-box p {
+    font-size: 1.1rem;
+}
+
+.testimonial-box h5 {
+    margin-top: 10px;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+/* =============================
+   ⚡ Footer Styling 
+   ============================= */
+footer {
+    background: #222;
+    color: #fff;
+    padding: 50px 0;
+}
+
+footer a {
+    color: #bbb;
+}
+
+footer a:hover {
+    color: white;
+}
+
+/* =============================
+   🎭 Animations 
+   ============================= */
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+} 
+/* ====== Styling for the Courses Page ====== */
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Hero Section */
+.hero-section {
+    position: relative;
+    height: 100vh; /* Full screen height */
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+                url('../images/banner.jpg') no-repeat center center/cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    color: #ffffff;
+}
+
+/* Fade-in Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Accordion Styling */
+.accordion-button {
+    transition: all 0.3s ease-in-out;
+}
+
+/* Hover effect for Accordion Buttons */
+.accordion-button:hover {
+    background-color: #f8f9fa;
+    color: #007bff;
+}
